@@ -15,13 +15,13 @@ configurations {
 }
 
 repositories {
+    mavenLocal()
     mavenCentral()
 }
 
 dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-web'
-    compile("org.springframework.boot:spring-boot-starter-data-jpa")
-    compile group: 'org.modelmapper', name: 'modelmapper', version: '2.3.8'
+    implementation 'me.example:tsyoo-autoconfigure:1.0'
     compileOnly 'org.projectlombok:lombok'
     annotationProcessor 'org.projectlombok:lombok'
     testImplementation('org.springframework.boot:spring-boot-starter-test') {
